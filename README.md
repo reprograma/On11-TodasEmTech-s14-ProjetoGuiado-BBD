@@ -105,7 +105,7 @@ Acesse o board para conferir as informações de forma visual: https://miro.com/
 
 - [x]  Não deverá ser possível criar estudio com o mesmo nome
 - [ ]  Não deverá ser possível criar título com o mesmo nome
-- [ ]  Para criar um novo título, deverá vincular no momento da criação a um estudio já existente no sistema
+- [x]  Para criar um novo título, deverá vincular no momento da criação a um estudio já existente no sistema
 
 <br>
 <br>
