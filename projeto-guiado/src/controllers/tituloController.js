@@ -10,7 +10,11 @@ const criaTitulo = async(req, res) => {
         estudio:req.body.estudio
     })
 
-    //lembrar de fazer a regra que nao permite criar um titulo que ja existe
+    //regra que nao permite criar um titulo que ja existe
+    const tituloJaExiste = await Titulo.findOne({nome: req.body.nome})
+    if(tituloJaExiste) {
+        return res.status(409).json({error: "Titulo já cadastrado!"})
+    }
     
     try {
         const novoTitulo = await titulo.save()
@@ -32,9 +36,16 @@ const mostraTitulosMarvel = async (req, res) => {
     return res.status(200).json(titulosFiltrado)
 }
 
+//regra que filtra todos os títulos Ghibli
+const mostraTitulosGhibli = async (req, res) => {
+    const titulos = await Titulo.find().populate('estudio')
+    const titulosFiltrado = titulos.filter(titulo => titulo.estudio.nome == "Ghibli")
 
+    return res.status(200).json(titulosFiltrado)
+}
 module.exports = { 
     criaTitulo,
     mostraTitulos,
-    mostraTitulosMarvel
+    mostraTitulosMarvel,
+    mostraTitulosGhibli
 }

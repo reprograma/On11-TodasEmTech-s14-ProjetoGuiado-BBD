@@ -85,7 +85,7 @@ Acesse o board para conferir as informações de forma visual: https://miro.com/
 
 ### Requisitos 
 - [x]  **"/titulos/marvel"** Deverá retornar todos os títulos com o estudio Marvel
-- [ ]  **"/titulos/ghibli"** Deverá retornar todos os títulos com o estudio Ghibli
+- [x]  **"/titulos/ghibli"** Deverá retornar todos os títulos com o estudio Ghibli
 - [ ]  **"/titulos/pixar"** Deverá retornar todos os títulos com o estudio Pixar
 
 - [x]  **"/estudios"** Deverá retornar todos os estudios cadastrados
@@ -95,16 +95,16 @@ Acesse o board para conferir as informações de forma visual: https://miro.com/
 - [x]  "**/titulos**"  Deverá criar um título 
 
 - [ ]  "/titulos/[ID]" Deverá deletar titulo por id específico e retorna mensagem amigável
-- [ ]  "/estudios/[ID]" Deverá deletar estudio por id específico e retorna mensagem amigável
+- [x]  "/estudios/[ID]" Deverá deletar estudio por id específico e retorna mensagem amigável
 
-- [ ]  "/titulos/[ID]" Deverá alterar informação específica dentro de um titulo por id específico e retorna o título alterado
+- [x]  "/titulos/[ID]" Deverá alterar informação específica dentro de um titulo por id específico e retorna o título alterado
 - [ ]  "/estudios/[ID]" Deverá alterar informação específica dentro de um estudio por id específico e retorna o título alterado
 
 
 ### Regras de negócio
 
 - [x]  Não deverá ser possível criar estudio com o mesmo nome
-- [ ]  Não deverá ser possível criar título com o mesmo nome
+- [x]  Não deverá ser possível criar título com o mesmo nome
 - [x]  Para criar um novo título, deverá vincular no momento da criação a um estudio já existente no sistema
 
 <br>
